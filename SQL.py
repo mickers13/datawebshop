@@ -1,7 +1,7 @@
 import mysql.connector
 f = open("password.txt", "r")
 password = f.readline()
-print(password)
+
 def create_database():
     mydb = mysql.connector.connect(
         host="localhost",
