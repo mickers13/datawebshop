@@ -17,11 +17,12 @@ def first_product():
 
 def first_product_R():
     print('\n\nOpdracht 2:')
-    results2 = collection3.find({"buid": {'$regex': '^.'}})
+    results2 = collection1.find({"profid": {'$regex': '^.'}})
     counter = 0
     for result in results2:
-        if result == ["r382KRL9rY6uDWi5jdETEprm8hV4ZNQiK3z2ZKoRjGYgrfBGEcw4px7HX5K1g9tFGgBJ"]:
+        if result["profid"] == ["r382KRL9rY6uDWi5jdETEprm8hV4ZNQiK3z2ZKoRjGYgrfBGEcw4px7HX5K1g9tFGgBJ"]:
             print(result["buid"])
+            break
         else:
             counter += 1
             if counter % 100000 == 0:
