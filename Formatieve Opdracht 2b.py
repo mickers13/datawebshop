@@ -32,17 +32,54 @@ def create_table():
     mycursor.execute("DROP TABLE IF EXISTS sessions")
     mycursor.execute("DROP TABLE if EXISTS profiles")
 
+    mycursor.execute("CREATE TABLE profiles ("
+                     "id VARCHAR(255) PRIMARY KEY,"
+                     "segment VARCHAR(255))")
+
+    mycursor.execute("CREATE TABLE buids ("
+                     "buid VARCHAR(255) PRIMARY KEY,"
+                     "profiles_id VARCHAR(255),"
+                     "FOREIGN KEY(profiles_id) REFERENCES profiles(id))")
+
+    mycursor.execute("CREATE TABLE sessions ("
+                     "id VARCHAR(255) PRIMARY KEY, "
+                     "buid VARCHAR(255), "
+                     "segment VARCHAR(45), "
+                     "has_sale BOOLEAN, "
+                     "_order VARCHAR(255), "
+                     "sources VARCHAR(45), "
+                     "_events VARCHAR(255), "
+                     "userAgent VARCHAR(45), "
+                     "sessionStart VARCHAR(255), "
+                     "sessionEnd VARCHAR(255), "
+                     "profile_id VARCHAR(255), "
+                     "product_id VARCHAR(255),"
+                     "buids_buid VARCHAR(255),"
+                     "FOREIGN KEY(buids_buid) REFERENCES buids(buid))")
+
+    mycursor.execute("CREATE TABLE brands ("
+                     "id VARCHAR(45) PRIMARY KEY, "
+                     "brand VARCHAR(45))")
+
+    mycursor.execute("CREATE TABLE categories ("
+                     "id VARCHAR(45) PRIMARY KEY, "
+                     "cat VARCHAR(45),"
+                     "subcat VARCHAR(45),"
+                     "subsubcat VARCHAR(45))")
+
+    mycursor.execute("CREATE TABLE genders ("
+                     "id VARCHAR(45) PRIMARY KEY, "
+                     "gender VARCHAR(45))")
+
+    mycursor.execute("CREATE TABLE doelgroepen ("
+                     "id VARCHAR(45) PRIMARY KEY, "
+                     "doelgroep VARCHAR(45))")
+
     mycursor.execute("CREATE TABLE products ("
                      "id VARCHAR(255) PRIMARY KEY, "
                      "name VARCHAR(255), "
-                     "cat VARCHAR(255), "
-                     "subcat VARCHAR(255), "
-                     "subsubcat VARCHAR(255), "
-                     "brand VARCHAR(255), "
-                     "gender VARCHAR(45), "
                      "price DECIMAL(10,2), "
                      "herhaalaankopen BOOLEAN, "
-                     "doelgroep VARCHAR(45), "
                      "kleur VARCHAR(45), "
                      "descr VARCHAR(255), "
                      "discount VARCHAR(255), "
@@ -55,26 +92,22 @@ def create_table():
                      "tax VARCHAR(20), "
                      "weekdeal BOOLEAN, "
                      "size VARCHAR(45), "
-                     "recommendable BOOLEAN)")
+                     "recommendable BOOLEAN,"
+                     "brand_id VARCHAR(45), "
+                     "cat_id VARCHAR(255), "
+                     "gender_id VARCHAR(45), "
+                     "doelgroep_id VARCHAR(45), "
+                     "FOREIGN KEY(brand_id) REFERENCES brands(id),"
+                     "FOREIGN KEY(cat_id) REFERENCES categories(id),"
+                     "FOREIGN KEY(gender_id) REFERENCES genders(id),"
+                     "FOREIGN KEY(doelgroep_id) REFERENCES doelgroepen(id))")
 
-    mycursor.execute("CREATE TABLE profiles ("
-                     "id VARCHAR(255) PRIMARY KEY)")
+    mycursor.execute("CREATE TABLE orders ("
+                     "session_id VARCHAR(255),"
+                     "product_id VARCHAR(45),"
+                     "FOREIGN KEY(session_id) REFERENCES sessions(id),"
+                     "FOREIGN KEY(product_id) REFERENCES products(id))")
 
-    mycursor.execute("CREATE TABLE sessions ("
-                     "id VARCHAR(255) PRIMARY KEY, "
-                     "build VARCHAR(255), "
-                     "segment VARCHAR(45), "
-                     "has_sale BOOLEAN, "
-                     "order_table VARCHAR(255), "
-                     "sources VARCHAR(45), "
-                     "events_table VARCHAR(255), "
-                     "user_agent VARCHAR(45), "
-                     "session_start VARCHAR(255), "
-                     "session_end VARCHAR(255), "
-                     "profile_id VARCHAR(255), "
-                     "product_id VARCHAR(255), "
-                     "FOREIGN KEY(product_id) REFERENCES products(id), "
-                     "FOREIGN KEY(profile_id) REFERENCES profiles(id))")
 
 def show_tables():
     mydb = mysql.connect(
