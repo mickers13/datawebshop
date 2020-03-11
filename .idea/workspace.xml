@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="106828d8-6f2a-4220-b860-7b9da33f5d32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/csvSessies beschreven" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/datawebshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/datawebshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jaritestfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/jaritestfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_deleteditstuk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/password.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Yw1mXyqi9fjWndJssSnP4gAYX5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.jaritestfile">
+    <configuration name="Formatieve Opdracht 2b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="datawebshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Formatieve Opdracht 2b.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jaritestfile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="datawebshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jariw\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jaritestfile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testjelle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="datawebshop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testjelle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.jaritestfile" />
+        <item itemvalue="Python.Formatieve Opdracht 2b" />
+        <item itemvalue="Python.testjelle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="482" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583949856539">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="482" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1583949856539" />
+    <state x="469" y="118" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583949670833">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="469" y="118" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1583949670833" />
+    <state x="484" y="0" key="#jaritestfile" timestamp="1583934251687">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="484" y="0" key="#jaritestfile/0.0.1600.860@0.0.1600.860" timestamp="1583934251687" />
+    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1583949839060">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1583949839060" />
+    <state x="155" y="69" key="DiffContextDialog" timestamp="1583949832394">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="155" y="69" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1583949832394" />
+    <state width="1574" height="221" key="GridCell.Tab.0.bottom" timestamp="1583949673365">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1574" height="221" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1583949673365" />
+    <state width="1574" height="221" key="GridCell.Tab.0.center" timestamp="1583949673364">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1574" height="221" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1583949673364" />
+    <state width="1574" height="221" key="GridCell.Tab.0.left" timestamp="1583949673364">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1574" height="221" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1583949673364" />
+    <state width="1574" height="221" key="GridCell.Tab.0.right" timestamp="1583949673364">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1574" height="221" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1583949673364" />
+    <state width="1574" height="275" key="GridCell.Tab.1.bottom" timestamp="1583948916741">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1574" height="275" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1583948916741" />
+    <state width="1574" height="275" key="GridCell.Tab.1.center" timestamp="1583948916740">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1574" height="275" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1583948916740" />
+    <state width="1574" height="275" key="GridCell.Tab.1.left" timestamp="1583948916740">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1574" height="275" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1583948916740" />
+    <state width="1574" height="275" key="GridCell.Tab.1.right" timestamp="1583948916740">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1574" height="275" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1583948916740" />
+    <state x="194" y="0" key="SettingsEditor" timestamp="1583934262919">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="194" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1583934262919" />
+    <state x="375" y="193" key="run.anything.popup" timestamp="1583949502592">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="375" y="193" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1583949502592" />
+  </component>
+</project>
