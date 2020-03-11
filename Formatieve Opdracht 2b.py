@@ -45,11 +45,8 @@ def create_table():
                      "id VARCHAR(255) PRIMARY KEY, "
                      "segment VARCHAR(45), "
                      "has_sale BOOLEAN, "
-                     "_order VARCHAR(255), "
                      "sources VARCHAR(45), "
                      "_events VARCHAR(255), "
-                     "sessionStart VARCHAR(255), "
-                     "sessionEnd VARCHAR(255), "
                      "buids_buid VARCHAR(255),"
                      "FOREIGN KEY(buids_buid) REFERENCES buids(buid))")
 
@@ -103,6 +100,11 @@ def create_table():
                      "FOREIGN KEY(session_id) REFERENCES sessions(id),"
                      "FOREIGN KEY(product_id) REFERENCES products(id))")
 
+    mycursor.execute("CREATE TABLE events ("
+                     "session_id VARCHAR(255),"
+                     "product_id INT,"
+                     "FOREIGN KEY(session_id) REFERENCES sessions(id),"
+                     "FOREIGN KEY(product_id) REFERENCES products(id))")
 
 def show_tables():
     mydb = mysql.connect(
