@@ -18,35 +18,6 @@ def csvWriter(filename, list):
         inData = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         inData.writerow(list)
 
-
-def csvProducten(data, filename):
-    key_list = ['_id', 'name', 'price', 'herhaalaankopen', 'color', 'description', 'properties', 'size']
-    key_list_price = ['selling_price', 'discount']
-    key_list_properties = ['eenheid', 'inhoud', 'leeftijd', 'serie', 'soort', 'sterkte', 'tax', 'weekdeal']
-    for num, i in enumerate(list(data)):
-        value_list = []
-        if num == 1 or num == 2:
-            for y in key_list:
-                try:
-                    if y == 'price':
-                        for j in i[y]:
-                            if j in key_list_price:
-                                value_list.append(i[y][j])
-                    elif y == 'properties':
-                        for j in i[y]:
-                            if j in key_list_properties:
-                                value_list.append(i[y][j])
-                    else:
-                        value_list.append(i[y])
-                        print(i[y])
-                except:
-                    value_list.append('NULL')
-            csvWriter(filename, value_list)
-
-#csvProducten(prod_cur, 'producten.csv')
-
-###sessies werkt niet, products wel.
-
 def csvSessies(data, filename):
     key_list = ['_id', 'buid', "segment", 'has_sale', 'order', 'events', 'sources']
     for num, i in enumerate(list(data)):
