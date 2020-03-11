@@ -58,21 +58,21 @@ def create_table():
                      "FOREIGN KEY(buids_buid) REFERENCES buids(buid))")
 
     mycursor.execute("CREATE TABLE brands ("
-                     "id VARCHAR(45) PRIMARY KEY, "
+                     "id INT PRIMARY KEY AUTO_INCREMENT, "
                      "brand VARCHAR(45))")
 
     mycursor.execute("CREATE TABLE categories ("
-                     "id VARCHAR(45) PRIMARY KEY, "
+                     "id INT PRIMARY KEY AUTO_INCREMENT, "
                      "cat VARCHAR(45),"
                      "subcat VARCHAR(45),"
                      "subsubcat VARCHAR(45))")
 
     mycursor.execute("CREATE TABLE genders ("
-                     "id VARCHAR(45) PRIMARY KEY, "
+                     "id INT PRIMARY KEY AUTO_INCREMENT, "
                      "gender VARCHAR(45))")
 
     mycursor.execute("CREATE TABLE doelgroepen ("
-                     "id VARCHAR(45) PRIMARY KEY, "
+                     "id INT PRIMARY KEY AUTO_INCREMENT, "
                      "doelgroep VARCHAR(45))")
 
     mycursor.execute("CREATE TABLE products ("
@@ -93,10 +93,10 @@ def create_table():
                      "weekdeal BOOLEAN, "
                      "size VARCHAR(45), "
                      "recommendable BOOLEAN,"
-                     "brand_id VARCHAR(45), "
-                     "cat_id VARCHAR(255), "
-                     "gender_id VARCHAR(45), "
-                     "doelgroep_id VARCHAR(45), "
+                     "brand_id INT, "
+                     "cat_id INT, "
+                     "gender_id INT, "
+                     "doelgroep_id INT, "
                      "FOREIGN KEY(brand_id) REFERENCES brands(id),"
                      "FOREIGN KEY(cat_id) REFERENCES categories(id),"
                      "FOREIGN KEY(gender_id) REFERENCES genders(id),"
