@@ -43,56 +43,51 @@ def create_table():
 
     mycursor.execute("CREATE TABLE sessions ("
                      "id VARCHAR(255) PRIMARY KEY, "
-                     "buid VARCHAR(255), "
                      "segment VARCHAR(45), "
                      "has_sale BOOLEAN, "
                      "_order VARCHAR(255), "
                      "sources VARCHAR(45), "
                      "_events VARCHAR(255), "
-                     "userAgent VARCHAR(45), "
                      "sessionStart VARCHAR(255), "
                      "sessionEnd VARCHAR(255), "
-                     "profile_id VARCHAR(255), "
-                     "product_id VARCHAR(255),"
                      "buids_buid VARCHAR(255),"
                      "FOREIGN KEY(buids_buid) REFERENCES buids(buid))")
 
     mycursor.execute("CREATE TABLE brands ("
-                     "id INT PRIMARY KEY AUTO_INCREMENT, "
+                     "id INT PRIMARY KEY, "
                      "brand VARCHAR(45))")
 
     mycursor.execute("CREATE TABLE categories ("
-                     "id INT PRIMARY KEY AUTO_INCREMENT, "
+                     "id INT PRIMARY KEY, "
                      "cat VARCHAR(45),"
                      "subcat VARCHAR(45),"
                      "subsubcat VARCHAR(45))")
 
     mycursor.execute("CREATE TABLE genders ("
-                     "id INT PRIMARY KEY AUTO_INCREMENT, "
+                     "id INT PRIMARY KEY, "
                      "gender VARCHAR(45))")
 
     mycursor.execute("CREATE TABLE doelgroepen ("
-                     "id INT PRIMARY KEY AUTO_INCREMENT, "
+                     "id INT PRIMARY KEY, "
                      "doelgroep VARCHAR(45))")
 
     mycursor.execute("CREATE TABLE products ("
-                     "id VARCHAR(255) PRIMARY KEY, "
+                     "id INT PRIMARY KEY, "
                      "name VARCHAR(255), "
-                     "price DECIMAL(10,2), "
+                     "selling_price INT, "
+                     "discount INT, "
                      "herhaalaankopen BOOLEAN, "
-                     "kleur VARCHAR(45), "
+                     "kleur VARCHAR(255), "
                      "descr VARCHAR(255), "
-                     "discount VARCHAR(255), "
-                     "eenheid VARCHAR(15), "
-                     "inhoud VARCHAR(20), "
-                     "leeftijd VARCHAR(45), "
-                     "serie VARCHAR(45), "
-                     "soort VARCHAR(45), "
-                     "sterkte VARCHAR(45), "
-                     "tax VARCHAR(20), "
+                     "eenheid VARCHAR(255), "
+                     "inhoud VARCHAR(255), "
+                     "leeftijd VARCHAR(255), "
+                     "serie VARCHAR(255), "
+                     "soort VARCHAR(255), "
+                     "sterkte VARCHAR(255), "
+                     "tax VARCHAR(255), "
                      "weekdeal BOOLEAN, "
-                     "size VARCHAR(45), "
-                     "recommendable BOOLEAN,"
+                     "size VARCHAR(255), "
                      "brand_id INT, "
                      "cat_id INT, "
                      "gender_id INT, "
@@ -104,7 +99,7 @@ def create_table():
 
     mycursor.execute("CREATE TABLE orders ("
                      "session_id VARCHAR(255),"
-                     "product_id VARCHAR(45),"
+                     "product_id INT,"
                      "FOREIGN KEY(session_id) REFERENCES sessions(id),"
                      "FOREIGN KEY(product_id) REFERENCES products(id))")
 
