@@ -1,0 +1,9 @@
+key_list is een lijst met de keys van de dictionary sessions, die van belang zijn voor ons.
+de andere lijsten vullen we met belangrijke informatie voor desbetreffende tabellen.
+- vele van de keys in de sessions dictionary zijn dictionaries op zichzelf. Hier wordt steeds doorheen geloopt om de nuttige info eruit te halen
+- voor elke buid wordt zowel de session id als de buid in een aparte buid.csv geschreven
+- als er een order bij een session hoort, slaan we de session id op, met alle bestelde producten. deze schrijven we in een aparte orders.csv
+- we iteraten door alle nested dicts in events, en slaan de clicks op producten op in een lijst, en deze schrijven we in een aparte events.csv
+- hetzelfde geldt voor sources, we slaan de session id en de full_url op in een aparte sources.csv
+- de overige nuttige info wordt geschreven naar sources.csv.
+als has_sale true is binnen sources.csv, betekent dat dat er een order aan gekoppeld zit.
